@@ -7,13 +7,17 @@
      <li class="nav-item {{ Request::is('albums') ? 'active' : ''}}">
        <a class="nav-link" href="{{ route('albums') }}">Albums photos</a>
      </li>
-     <li class="nav-item {{ Request::is('albums-videos') ? 'active' : ''}}">
-       <a class="nav-link" href="{{ route('albums-videos') }}">Albums videos</a>
+     <li class="nav-item {{ Request::is('albumsvideos') ? 'active' : ''}}">
+       <a class="nav-link" href="{{ route('albumsvideos') }}">Albums videos</a>
      </li>
      @if (Route::has('login'))
-     <li class="nav-item {{ Request::is('albums/create') ? 'active' : ''}}">
        @auth
-       <a class="nav-link" href="{{ route('album-create') }}">Créer un album</a>
+       <li class="nav-item {{ Request::is('albums/create') ? 'active' : ''}}">
+         <a class="nav-link" href="{{ route('album-create') }}">Créer un album Photo</a>
+       </li>
+       <li class="nav-item {{ Request::is('albumsvideo/create') ? 'active' : ''}}">
+         <a class="nav-link" href="{{ route('albumvideo-create') }}">Créer un album Vidéo</a>
+       </li>
        @endauth
      </li>
      @endif
