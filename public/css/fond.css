@@ -1,0 +1,31 @@
+.fond
+{
+  background-image:url('../storage/images/index.jpg');
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.layer {
+  padding-top: 30px;
+  margin-left: 25%;
+  margin-right:25%;
+   background: rgba(0, 0, 0, .6);
+}
+
+.texte
+{
+  color:#FFFFFF;
+  margin-left:40px;
+  margin-right:40px;
+  opacity: 1.0;
+   font-size: 15px;
+}
+.texte h1
+{
+  text-align:center;
+  opacity: 1.0;
+}

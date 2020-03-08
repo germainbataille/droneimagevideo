@@ -9,7 +9,7 @@
         @auth
         <p>
           <a href="{{ route('photo-create', $album->id) }}" class="btn btn-primary my-2">Upload Photo</a>
-          <a href="/albums" class="btn btn-secondary my-2">Go back</a>
+          <a href="/albums" class="btn btn-secondary my-2">Retour</a>
         </p>
         @endauth
       @endif

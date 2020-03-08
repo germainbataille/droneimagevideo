@@ -10,4 +10,14 @@ class MenuController extends Controller
   {
     return view('index');
   }
+
+  public function apropos()
+  {
+    return view('apropos');
+  }
+
+  public function contact()
+  {
+    return view('contact');
+  }
 }

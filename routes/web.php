@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'MenuController@index');
+Route::get('/apropos', 'MenuController@apropos')->name('apropos');
+Route::get('/contact', 'MenuController@contact')->name('contact');
+
 Route::get('/albums', 'AlbumsController@index')->name('albums');
 Route::get('/albums/create', 'AlbumsController@create')->name('album-create');
 Route::post('/albums/store', 'AlbumsController@store')->name('album-store');
@@ -35,3 +38,5 @@ Route::delete('/video/{id}/delete', 'VideosController@destroy')->name('video-des
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('contact/submit','ContactController@submit')->name('contact-form-submit');

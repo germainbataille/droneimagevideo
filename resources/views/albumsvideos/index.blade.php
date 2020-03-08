@@ -13,7 +13,7 @@
              <p class="card-text">{{ $album->description }}</p>
              <div class="d-flex justify-content-between align-items-center">
                <div class="btn-group">
-                 <a href="{{ route('albumvideo-show',$album->id) }}" class="btn btn-sm btn-outline-secondary">View</a>
+                 <a href="{{ route('albumvideo-show',$album->id) }}" class="btn btn-sm btn-outline-secondary">Voir</a>
                </div>
                <small class="text-muted">{{ $album->name }}</small>
              </div>

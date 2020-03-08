@@ -27,6 +27,8 @@
        @endforeach
      </div>
   @else
-    <h3>No albums yet.</h3>
+    <h3>Pas encore de vidéo.</h3>
   @endif
-@endsection
+  <div style="height:200px;">
+  </div>
+  @endsection

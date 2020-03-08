@@ -19,7 +19,12 @@
          <a class="nav-link" href="{{ route('albumvideo-create') }}">Créer un album Vidéo</a>
        </li>
        @endauth
-     </li>
+       <li class="nav-item {{ Request::is('apropos') ? 'active' : ''}}">
+         <a class="nav-link" href="{{ route('apropos') }}">À propos</a>
+       </li>
+       <li class="nav-item {{ Request::is('contact') ? 'active' : ''}}">
+         <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+       </li>
      @endif
    </ul>
    @if (Route::has('login'))
